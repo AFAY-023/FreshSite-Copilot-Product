@@ -6,7 +6,7 @@ This document translates FreshSite Copilot from a vertical fresh-retail demo int
 
 The goal is to answer an interview question like:
 
-> Beyond the fresh-retail scenario, what concrete agent-related capabilities did you build or learn?
+> Beyond the fresh-retail scenario, what concrete agent-related capabilities can transfer to retail expansion workflows?
 
 ## Capability 1: Task Understanding
 
@@ -16,7 +16,7 @@ Convert a fuzzy user goal into structured constraints that downstream tools can 
 
 ### In FreshSite
 
-User intent:
+Retail expansion user intent:
 
 > Find locations that are more suitable for fresh-retail service expansion, especially where online service is weak and resident demand is strong.
 
@@ -37,7 +37,7 @@ Structured request:
 
 ### Transferable Framing
 
-This is a constraint-normalization layer. It can be reused in any decision copilot where users express goals imprecisely but the system needs structured execution parameters.
+This is a constraint-normalization layer. It can be reused whenever expansion users express goals imprecisely but the system needs structured execution parameters.
 
 ## Capability 2: Tool-Based Decision Workflow
 
@@ -69,7 +69,7 @@ The current fresh-retail workflow maps to these tools:
 
 ### Transferable Framing
 
-The important capability is not the exact fresh-retail score. It is the ability to express a decision as a transparent, testable tool chain.
+The important capability is not the exact fresh-retail score. It is the ability to express expansion screening as a transparent, testable tool chain.
 
 ## Capability 3: Evaluator Checks
 
@@ -91,7 +91,7 @@ This is where the project becomes more agentic without becoming unstable. The sy
 
 ### Transferable Framing
 
-Evaluator checks can be reused in hiring recommendation, supplier ranking, location screening, document retrieval, or any workflow where top-ranked results need guardrails.
+Evaluator checks can be reused in convenience store expansion, pharmacy site screening, pickup-point placement, supplier ranking, or any workflow where top-ranked results need guardrails.
 
 ## Capability 4: Evidence-Grounded Explanation
 
@@ -139,7 +139,7 @@ Domain Adapter
 
 ### Why It Matters
 
-Without this split, the project is only a fresh-retail tool. With this split, fresh retail becomes a first scenario for validating a more general decision-copilot pattern.
+Without this split, the project is only a fresh-retail tool. With this split, fresh retail becomes the first scenario for validating a broader retail-expansion decision-copilot pattern.
 
 ## Capability 6: Traceable Decision UX
 
@@ -176,4 +176,4 @@ The reusable agent capabilities are:
 
 One-sentence version:
 
-> I used fresh-retail siting as a concrete domain to practice a reusable agentic decision copilot pattern: parse goals, call decision tools, evaluate results, explain recommendations with evidence, and isolate domain-specific data behind an adapter.
+> I used fresh-retail siting as the first retail-expansion domain to practice a reusable agentic decision copilot pattern: parse goals, call decision tools, evaluate results, explain recommendations with evidence, and isolate domain-specific data behind an adapter.
